@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Exo:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Bungee&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+ ul{
+    list-style-type: none;
+ }
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1A1110;
+    color: #fff;
+}
+
+.title{
+    font-family: 'Bungee', sans-serif;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.nav-links{
+    font-family: 'Bungee', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li{
+    
+    list-style: none;
+}
+
+.title a{
+    text-decoration: none;
+    color: #fff;
+    list-style-type: none;
+    
+}
+
+.title a:hover{
+    color: #fff;
+    background-color: #555;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 1.23rem;
+    display: inline-block;
+}
+
+.nav-links li a:hover{
+    background-color: #555;
+}
+
+.toggle-button{
+    position:absolute;
+    top:.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+@media(max-width:600px){
+    .toggle-button{
+        display: flex;
+    }
+
+    .title{
+        font-size: 1.5rem;
+    }
+    .nav-links{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav-links li{
+        text-align: center;
+    }
+
+    .nav-links li a{
+        padding: .5rem 1rem;
+    }
+
+    .nav-links.active{
+        display: flex;
+    }
+}
+
+.body{
+    background-color: #444;  
+}
+.main-container{
+    background-image: url(creambackground4.png);
+    background-size: cover;
+    background-color: #ece8e1;
+    background-position: left;
+    padding-bottom: 250px;
+    padding-top: 50px;
+    
+}
+
+.best-lfg{
+    font-family: 'Exo', sans-serif;
+    color: #1A1110;
+    margin-left: 40px;
+    margin-bottom: 14px;
+    font-size: 3rem;
+}
+
+.best-lfg h4{
+    margin-left: 135px;
+}
+
+.second-home-text{
+    font-family: 'Exo', sans-serif;
+    margin-top: 25px;
+    margin-left: 90px;
+}
+
+.second-home-text h3{
+    margin-left: 90px;
+}
+
+.download-button{
+    margin-top: 34px;
+    justify-content: left;
+    text-align: left;
+    margin-left: 150px;
+}
+
+.ios{
+    background-color: #ece8e1;
+    border: solid;
+    padding: 16px 24px;
+    margin-right: 20px;
+    border-radius: 24px;
+    color: #1A1110;
+    transition: ease-out 0.4s;
+    box-shadow: inset 0 0 0 0 #333;
+}
+
+#apple{
+    font-size: 24px;
+    margin-right: 6px;
+}
+.googleplay{
+    background-color: #ece8e1;
+    border: solid;
+    padding: 16px 24px;
+    margin-left: 20px;
+    border-radius: 24px;
+    color: #1A1110;
+    transition: ease-out 0.4s;
+    box-shadow: inset 0 0 0 0 #333;
+}
+
+#android{
+    font-size: 24px;
+    margin-right: 6px;
+}
+.ios:hover{
+    box-shadow: inset 200px 0 200px 0 #333;
+    color: #1A1110;
+    cursor: pointer;
+}
+
+.googleplay:hover{
+    box-shadow: inset 210px 0 200px 0 #333;
+    color: #1A1110;
+    cursor: pointer;
+}
+
+.mid-container{
+    background-color: #1A1110;
+    height: 225px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    
+}
+
+
+.content{
+    margin-top: 65px;
+    color: #ece8e1;
+    display: block;
+    width: 20%;
+    margin-bottom: 36px;
+}
+
+#globe{
+    margin-bottom: 8px;
+    font-size: 60px;
+}
+
+#uncharted{
+    margin-bottom: 8px;
+    font-size: 60px;
+}
+
+#reply{
+    margin-bottom: 8px;
+    font-size: 60px;
+}
+
+.search-container{
+    height: 1700px;
+    width: 88%;
+    background-color: #333;
+    justify-content: center;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 24px;
+    border-radius: 4px;
+    
+}
+
+.search-bar{
+    float: left;
+    margin-top: 16px;
+    margin-left: 24px;
+    background-color: #555;
+    color: #ece8e1;
+    width: 400px;
+    height: 36px;
+    border-radius: 8px;
+}
+
+.search-submit{
+    float: left;
+    padding: 6px;
+    border-radius: 36px;
+    margin-top: 16px;
+    margin-left: 4px;
+    
+}
+
+.search-submit:hover{
+    padding: 7px;
+    padding-right: 6px;
+}
+
+.filter-search{
+    margin-right: 8px;
+    
+}
+#region{
+    margin-top: 20px;
+    float: right;
+}
+
+#rank{
+    margin-top: 20px;
+    float: right;
+}
+
+#language{
+    margin-top: 20px;
+    float: right;
+    
+}
+
+#game-mode{
+    margin-top: 20px;
+    float: right;
+    
+}
+
+#language::after{
+    content: '';
+    width: 100%;
+    background-color: #1A1110;
+}
+
+.black-line{
+    margin-top: 54px;
+    height: 550px;
+}
+
+.body{
+    background-color: rgb(242, 242, 242);
+}
+
+header{
+    margin-bottom: 50px;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.sign-container{
+    padding: 16px;
+    margin-top: 100px;
+    position: relative;
+    width: 350px;
+    height: 375px;
+    background-color: #fff;
+    margin: 0 auto;/*centers horizontally*/
+}
+.logo{
+    
+    width: 75px;
+    height: auto;
+    
+    margin: 0 auto;
+    
+}
+
+.user-input{
+    font-size: 12px;
+    
+}
+
+.user-input label{
+    color: #757575;
+}
+.user-input input{
+    width: 100%;
+    background-color: rgb(242, 242, 242);
+}
+
+.pass-input{
+    margin-top: 34px;
+    font-size: 12px;
+}
+
+.pass-input label{
+    color: #757575;
+}
+.pass-input input{
+    width: 100%;
+    background-color: rgb(242, 242, 242);
+}
+
+.forgot-pass{
+    margin-top: 48px;
+    font-size: 12px;
+    text-align: right;
+    
+
+}
+
+.forgot-pass a{
+    color: #757575;
+    text-decoration: none;
+}
+
+.forgot-pass a:hover{
+    text-decoration: underline;
+    text-decoration-color: yellow;
+}
+.log-btn{
+    text-align: center;
+    
+}
+
+button{
+    margin-top: 34px;
+    text-align: center;
+    font-size: 16px;
+    background-color: yellow;
+    border-radius: 16px;
+    padding: 10px 24px;
+    text-align: center;
+    border: none;
+}
+
+
+.sign-up{
+    margin-top: 32px;
+}
+
+.sign-up h1{
+    font-size: 16px;
+    color: #1A1110;
+    font-weight: normal;
+}
+
+.sign-up a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.sign-up a:hover{
+    text-decoration: underline;
+    text-decoration-color: yellow;
+}
+.main-wrap{
+    width: 100%;
+    background-color: #fff;
+}
